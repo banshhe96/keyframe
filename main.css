@@ -1,0 +1,39 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.box{
+    
+    background-color: red;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes anim {
+    from{
+       border-radius: 50%;
+       background-color: red;
+       width: 200px;
+       height: 200px;
+    }
+    to{
+        border-radius: 0%;
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+
+    }
+}
+
+
